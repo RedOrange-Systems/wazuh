@@ -191,5 +191,3 @@ Stay up to date on news, releases, engineering articles and more.
 Wazuh Copyright (C) 2015-2023 Wazuh Inc. (License GPLv2)
 
 Based on the OSSEC project started by Daniel Cid.
-#   w a z u h  
- 

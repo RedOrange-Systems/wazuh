@@ -9,107 +9,107 @@
 [![YouTube](https://img.shields.io/youtube/views/peTSzcAueEc?style=social)](https://www.youtube.com/watch?v=peTSzcAueEc)
 
 
-Wazuh is a free and open source platform used for threat prevention, detection, and response. It is capable of protecting workloads across on-premises, virtualized, containerized, and cloud-based environments.
+Wazuh es una plataforma gratuita y de código abierto utilizada para la prevención, detección y respuesta ante amenazas. Es capaz de proteger cargas de trabajo en entornos locales, virtualizados, en contenedores y basados en la nube.
 
-Wazuh solution consists of an endpoint security agent, deployed to the monitored systems, and a management server, which collects and analyzes data gathered by the agents. Besides, Wazuh has been fully integrated with the Elastic Stack, providing a search engine and data visualization tool that allows users to navigate through their security alerts.
+La solución Wazuh consta de un agente de seguridad para endpoints, desplegado en los sistemas monitorizados, y un servidor de gestión, que recopila y analiza los datos recogidos por los agentes. Además, Wazuh se ha integrado completamente con Elastic Stack, proporcionando un motor de búsqueda y una herramienta de visualización de datos que permite a los usuarios navegar por sus alertas de seguridad.
 
-## Wazuh capabilities
+## Capacidades de Wazuh
 
-A brief presentation of some of the more common use cases of the Wazuh solution.
+Una breve presentación de algunos de los casos de uso más comunes de la solución Wazuh.
 
-**Intrusion detection**
+**Detección de intrusiones**
 
-Wazuh agents scan the monitored systems looking for malware, rootkits and suspicious anomalies. They can detect hidden files, cloaked processes or unregistered network listeners, as well as inconsistencies in system call responses.
+Los agentes de Wazuh escanean los sistemas monitorizados en busca de malware, rootkits y anomalías sospechosas. Pueden detectar archivos ocultos, procesos encubiertos o escuchas de red no registradas, así como incoherencias en las respuestas a las llamadas al sistema.
 
-In addition to agent capabilities, the server component uses a signature-based approach to intrusion detection, using its regular expression engine to analyze collected log data and look for indicators of compromise.
+Además de las capacidades del agente, el componente de servidor utiliza un enfoque basado en firmas para la detección de intrusiones, empleando su motor de expresiones regulares para analizar los datos de registro recopilados y buscar indicadores de compromiso.
 
-**Log data analysis**
+**Análisis de datos de registro (logs)**
 
-Wazuh agents read operating system and application logs, and securely forward them to a central manager for rule-based analysis and storage. When no agent is deployed, the server can also receive data via syslog from network devices or applications.
+Los agentes de Wazuh leen los registros del sistema operativo y de las aplicaciones, y los reenvían de forma segura a un gestor central para su análisis basado en reglas y su almacenamiento. Cuando no hay ningún agente desplegado, el servidor también puede recibir datos mediante syslog desde dispositivos de red o aplicaciones.
 
-The Wazuh rules help make you aware of application or system errors, misconfigurations, attempted and/or successful malicious activities, policy violations and a variety of other security and operational issues.
+Las reglas de Wazuh te ayudan a detectar errores de aplicaciones o del sistema, configuraciones incorrectas, actividades maliciosas intentadas y/o exitosas, violaciones de políticas y otros diversos problemas de seguridad y operativos.
 
-**File integrity monitoring**
+**Monitorización de la integridad de archivos**
 
-Wazuh monitors the file system, identifying changes in content, permissions, ownership, and attributes of files that you need to keep an eye on. In addition, it natively identifies users and applications used to create or modify files.
+Wazuh monitoriza el sistema de archivos, identificando cambios en el contenido, permisos, propiedad y atributos de los archivos que necesitas vigilar. Además, identifica de forma nativa los usuarios y aplicaciones utilizados para crear o modificar archivos.
 
-File integrity monitoring capabilities can be used in combination with threat intelligence to identify threats or compromised hosts. In addition, several regulatory compliance standards, such as PCI DSS, require it.
+Las capacidades de monitorización de la integridad de archivos pueden usarse en combinación con inteligencia de amenazas para identificar amenazas o hosts comprometidos. Además, varios estándares de cumplimiento normativo, como PCI DSS, lo requieren.
 
-**Vulnerability detection**
+**Detección de vulnerabilidades**
 
-Wazuh agents pull software inventory data and send this information to the server, where it is correlated with continuously updated CVE (Common Vulnerabilities and Exposure) databases, in order to identify well-known vulnerable software.
+Los agentes de Wazuh extraen datos del inventario de software y envían esta información al servidor, donde se correlaciona con bases de datos de CVE (Common Vulnerabilities and Exposure) actualizadas continuamente, con el fin de identificar software vulnerable conocido.
 
-Automated vulnerability assessment helps you find the weak spots in your critical assets and take corrective action before attackers exploit them to sabotage your business or steal confidential data.
+La evaluación automatizada de vulnerabilidades te ayuda a encontrar los puntos débiles en tus activos críticos y a tomar medidas correctivas antes de que los atacantes los exploten para sabotear tu negocio o robar datos confidenciales.
 
-**Configuration assessment**
+**Evaluación de la configuración**
 
-Wazuh monitors system and application configuration settings to ensure they are compliant with your security policies, standards and/or hardening guides. Agents perform periodic scans to detect applications that are known to be vulnerable, unpatched, or insecurely configured.
+Wazuh monitoriza la configuración del sistema y de las aplicaciones para asegurarse de que cumplen con tus políticas de seguridad, estándares y/o guías de hardening. Los agentes realizan escaneos periódicos para detectar aplicaciones conocidas por ser vulnerables, sin parchear o configuradas de forma insegura.
 
-Additionally, configuration checks can be customized, tailoring them to properly align with your organization. Alerts include recommendations for better configuration, references and mapping with regulatory compliance.
+Además, las comprobaciones de configuración pueden personalizarse, adaptándolas correctamente a tu organización. Las alertas incluyen recomendaciones para una mejor configuración, referencias y correspondencia con el cumplimiento normativo.
 
-**Incident response**
+**Respuesta a incidentes**
 
-Wazuh agents provide out-of-the-box active responses to perform various countermeasures to address active threats, such as blocking access to a system from the threat source when certain criteria are met.
+Los agentes de Wazuh proporcionan respuestas activas listas para usar, para llevar a cabo diversas contramedidas y hacer frente a amenazas activas, como bloquear el acceso a un sistema desde la fuente de la amenaza cuando se cumplen ciertos criterios.
 
-In addition, Wazuh can be used to remotely run commands or system queries on agents, identifying indicators of compromise (IOCs) and helping perform other live forensics or incident response tasks.
+Además, Wazuh puede utilizarse para ejecutar de forma remota comandos o consultas del sistema en los agentes, identificando indicadores de compromiso (IOC) y ayudando a realizar otras tareas de análisis forense en vivo o respuesta a incidentes.
 
-**Regulatory compliance**
+**Cumplimiento normativo**
 
-Wazuh provides some of the necessary security controls to become compliant with industry standards and regulations. These features, combined with its scalability and multi-platform support help organizations meet technical compliance requirements.
+Wazuh proporciona algunos de los controles de seguridad necesarios para cumplir con estándares y regulaciones de la industria. Estas características, combinadas con su escalabilidad y soporte multiplataforma, ayudan a las organizaciones a cumplir con los requisitos técnicos de cumplimiento.
 
-Wazuh is widely used by payment processing companies and financial institutions to meet PCI DSS (Payment Card Industry Data Security Standard) requirements. Its web user interface provides reports and dashboards that can help with this and other regulations (e.g. GPG13 or GDPR).
+Wazuh es ampliamente utilizado por empresas de procesamiento de pagos e instituciones financieras para cumplir con los requisitos de PCI DSS (Payment Card Industry Data Security Standard). Su interfaz de usuario web ofrece informes y paneles de control que pueden ayudar con esta y otras regulaciones (por ejemplo, GPG13 o GDPR).
 
-**Cloud security**
+**Seguridad en la nube**
 
-Wazuh helps monitoring cloud infrastructure at an API level, using integration modules that are able to pull security data from well known cloud providers, such as Amazon AWS, Azure or Google Cloud. In addition, Wazuh provides rules to assess the configuration of your cloud environment, easily spotting weaknesses.
+Wazuh ayuda a monitorizar la infraestructura en la nube a nivel de API, utilizando módulos de integración capaces de extraer datos de seguridad de proveedores de nube conocidos, como Amazon AWS, Azure o Google Cloud. Además, Wazuh proporciona reglas para evaluar la configuración de tu entorno en la nube, detectando fácilmente las debilidades.
 
-In addition, Wazuh light-weight and multi-platform agents are commonly used to monitor cloud environments at the instance level.
+Además, los agentes ligeros y multiplataforma de Wazuh se utilizan habitualmente para monitorizar entornos en la nube a nivel de instancia.
 
-**Containers security**
+**Seguridad de contenedores**
 
-Wazuh provides security visibility into your Docker hosts and containers, monitoring their behavior and detecting threats, vulnerabilities and anomalies. The Wazuh agent has native integration with the Docker engine allowing users to monitor images, volumes, network settings, and running containers.
+Wazuh proporciona visibilidad de seguridad en tus hosts y contenedores Docker, monitorizando su comportamiento y detectando amenazas, vulnerabilidades y anomalías. El agente de Wazuh cuenta con integración nativa con el motor de Docker, lo que permite a los usuarios monitorizar imágenes, volúmenes, configuraciones de red y contenedores en ejecución.
 
-Wazuh continuously collects and analyzes detailed runtime information. For example, alerting for containers running in privileged mode, vulnerable applications, a shell running in a container, changes to persistent volumes or images, and other possible threats.
+Wazuh recopila y analiza continuamente información detallada en tiempo de ejecución. Por ejemplo, genera alertas para contenedores que se ejecutan en modo privilegiado, aplicaciones vulnerables, un shell ejecutándose dentro de un contenedor, cambios en volúmenes o imágenes persistentes, y otras posibles amenazas.
 
 ## WUI
 
-The Wazuh WUI provides a powerful user interface for data visualization and analysis. This interface can also be used to manage Wazuh configuration and to monitor its status.
+La WUI de Wazuh ofrece una potente interfaz de usuario para la visualización y el análisis de datos. Esta interfaz también puede utilizarse para gestionar la configuración de Wazuh y monitorizar su estado.
 
-**Modules overview**
+**Resumen de módulos**
 
 ![Modules overview](https://github.com/wazuh/wazuh-dashboard-plugins/raw/main/screenshots/app.png)
 
-**Security events**
+**Eventos de seguridad**
 
 ![Overview](https://github.com/wazuh/wazuh-dashboard-plugins/blob/main/screenshots/app2.png)
 
-**Integrity monitoring**
+**Monitorización de integridad**
 
 ![Overview](https://github.com/wazuh/wazuh-dashboard-plugins/blob/main/screenshots/app3.png)
 
-**Vulnerability detection**
+**Detección de vulnerabilidades**
 
 ![Overview](https://github.com/wazuh/wazuh-dashboard-plugins/blob/main/screenshots/app4.png)
 
-**Regulatory compliance**
+**Cumplimiento normativo**
 
 ![Overview](https://github.com/wazuh/wazuh-dashboard-plugins/blob/main/screenshots/app5.png)
 
-**Agents overview**
+**Resumen de agentes**
 
 ![Overview](https://github.com/wazuh/wazuh-dashboard-plugins/blob/main/screenshots/app6.png)
 
-**Agent summary**
+**Resumen del agente**
 
 ![Overview](https://github.com/wazuh/wazuh-dashboard-plugins/blob/main/screenshots/app7.png)
 
-## Orchestration
+## Orquestación
 
-Here you can find all the automation tools maintained by the Wazuh team.
+Aquí puedes encontrar todas las herramientas de automatización mantenidas por el equipo de Wazuh.
 
 * [Wazuh AWS CloudFormation](https://github.com/wazuh/wazuh-cloudformation)
 
-* [Docker containers](https://github.com/wazuh/wazuh-docker)
+* [Contenedores Docker](https://github.com/wazuh/wazuh-docker)
 
 * [Wazuh Ansible](https://github.com/wazuh/wazuh-ansible)
 
@@ -123,13 +123,13 @@ Here you can find all the automation tools maintained by the Wazuh team.
 
 * [Wazuh Salt](https://github.com/wazuh/wazuh-salt)
 
-## Branches
+## Ramas (Branches)
 
-* `main` branch contains the latest code, be aware of possible bugs on this branch.
+* La rama `main` contiene el código más reciente; ten en cuenta la posibilidad de errores en esta rama.
 
-## Software and libraries used
+## Software y bibliotecas utilizadas
 
-| Software                                                                | Version | Author                        | License                                       |
+| Software                                                                | Versión | Autor                          | Licencia                                       |
 | ----------------------------------------------------------------------- | ------- | ----------------------------- | --------------------------------------------- |
 | [bpftool](https://github.com/libbpf/bpftool)                            | 7.7.0   | libbpf                        | GNU Public License version 2                  |
 | [bzip2](https://github.com/libarchive/bzip2)                            | 1.0.8   | Julian Seward                 | BSD License                                   |
@@ -162,32 +162,32 @@ Here you can find all the automation tools maintained by the Wazuh team.
 | [sqlite](https://github.com/sqlite/sqlite)                              | 3.53.1  | D. Richard Hipp               | Public Domain (no restrictions)               |
 | [zlib](https://github.com/madler/zlib)                                  | 1.3.1   | Jean-loup Gailly & Mark Adler | zlib/libpng License                           |
 
-* [PyPi packages](framework/requirements.txt)
+* [Paquetes PyPi](framework/requirements.txt)
 
-## Documentation
+## Documentación
 
-* [Full documentation](http://documentation.wazuh.com)
-* [Wazuh installation guide](https://documentation.wazuh.com/current/installation-guide/index.html)
+* [Documentación completa](http://documentation.wazuh.com)
+* [Guía de instalación de Wazuh](https://documentation.wazuh.com/current/installation-guide/index.html)
 
-## Get involved
+## Participa
 
-Become part of the [Wazuh's community](https://wazuh.com/community/) to learn from other users, participate in discussions, talk to our developers and contribute to the project.
+Forma parte de la [comunidad de Wazuh](https://wazuh.com/community/) para aprender de otros usuarios, participar en debates, hablar con nuestros desarrolladores y contribuir al proyecto.
 
-If you want to contribute to our project please don’t hesitate to make pull-requests, submit issues or send commits, we will review all your questions.
+Si deseas contribuir a nuestro proyecto, no dudes en enviar pull requests, reportar issues o enviar commits; revisaremos todas tus consultas.
 
-You can also join our [Slack community channel](https://wazuh.com/community/join-us-on-slack/) and [mailing list](https://groups.google.com/d/forum/wazuh) by sending an email to [wazuh+subscribe@googlegroups.com](mailto:wazuh+subscribe@googlegroups.com), to ask questions and participate in discussions.
+También puedes unirte a nuestro [canal de comunidad en Slack](https://wazuh.com/community/join-us-on-slack/) y a la [lista de correo](https://groups.google.com/d/forum/wazuh) enviando un correo electrónico a [wazuh+subscribe@googlegroups.com](mailto:wazuh+subscribe@googlegroups.com), para hacer preguntas y participar en debates.
 
-Stay up to date on news, releases, engineering articles and more.
+Mantente al día sobre noticias, lanzamientos, artículos técnicos y más.
 
-* [Wazuh website](http://wazuh.com)
+* [Sitio web de Wazuh](http://wazuh.com)
 * [Linkedin](https://www.linkedin.com/company/wazuh)
 * [YouTube](https://www.youtube.com/c/wazuhsecurity)
 * [Twitter](https://twitter.com/wazuh)
-* [Wazuh blog](https://wazuh.com/blog/)
-* [Slack announcements channel](https://wazuh.com/community/join-us-on-slack/)
+* [Blog de Wazuh](https://wazuh.com/blog/)
+* [Canal de anuncios en Slack](https://wazuh.com/community/join-us-on-slack/)
 
-## Authors
+## Autores
 
-Wazuh Copyright (C) 2015-2023 Wazuh Inc. (License GPLv2)
+Wazuh Copyright (C) 2015-2023 Wazuh Inc. (Licencia GPLv2)
 
-Based on the OSSEC project started by Daniel Cid.
+Basado en el proyecto OSSEC iniciado por Daniel Cid.
